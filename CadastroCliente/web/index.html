@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h2>Adicionar Clientes</h2>
+    <input type="text" id="cliente-nome" placeholder="Nome do Cliente">
+    <input type="text" id="cliente-cpf" placeholder="CPF do Cliente">
+    <input type="text" id="cliente-endereco" placeholder="Endereco do Cliente">
+    <input type="text" id="cliente-estado" placeholder="Estado civil do Cliente">
+    <input type="text" id="cliente-genero" placeholder="Genero do Cliente">
+    <button onclick="criarCliente()">Adicionar Cliente</button>
+
+    <h1>Lista de Clientes</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Endereco</th>
+                <th>Estado Civil</th>
+                <th>Genero</th>
+                <th>Editar</th>
+                <th>Deletar</th>
+            </tr>
+        </thead>
+        <tbody id="cliente-tabela">
+
+        </tbody>
+    </table>
+</body>
+</html>
